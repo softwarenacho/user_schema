@@ -6,10 +6,10 @@ class CreateUsers < ActiveRecord::Migration
       # Agrega aquí las columnas que faltan
       t.string :last_name
       t.string :gender
-      t.string :birthday
+      t.date :birthday
       t.string :email
       t.string :phone 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
